@@ -19,7 +19,7 @@ jobs:
           scope: '@scdb'
       - run: envsubst  < .npmrc > .npmrc
       - run: npm ci
-      - run: npm publish --registry=https://registry.npmjs.org
+      - run: npm publish --access public --registry=https://registry.npmjs.org
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
         
@@ -33,10 +33,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          registry-url: https://npm.pkg.github.com/
-          scope: '@SCDBRepo'
+          registry: https://npm.pkg.github.com/
+          scope: '@utilcode'
       - run: envsubst  < .npmrc > .npmrc
       - run: npm ci
-      - run: npm publish --registry=https://npm.pkg.github.com
+      - run: npm publish --access public --registry=https://npm.pkg.github.com
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
