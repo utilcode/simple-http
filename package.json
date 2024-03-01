@@ -1,0 +1,33 @@
+{
+  "name": "@utilcode/simple-http",
+  "version": "1.0.0",
+  "description": "Simple http client",
+  "main": "./lib/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "http",
+    "client"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utilcode/simple-http.git"
+  },
+  "dependencies": {
+    "qs": "^6.11.2"
+  },
+  "bugs": {
+    "url": "https://github.com/utilcode/simple-http/issues"
+  },
+  "homepage": "https://github.com/utilcode/simple-http#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
