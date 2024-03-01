@@ -1,6 +1,6 @@
 {
   "name": "@utilcode/simple-http",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple http client",
   "main": "./lib/index.js",
   "type": "module",
@@ -11,7 +11,7 @@
     "http",
     "client"
   ],
-  "author": "",
+  "author": "thestrangedev",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.20"
@@ -21,6 +21,7 @@
     "url": "https://github.com/utilcode/simple-http.git"
   },
   "dependencies": {
+    "@oraliepham/api-chat-fanpage-facebook": "^1.1.5",
     "qs": "^6.11.2"
   },
   "bugs": {
